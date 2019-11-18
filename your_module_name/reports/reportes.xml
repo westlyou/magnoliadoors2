@@ -1,0 +1,41 @@
+
+<odoo>
+    <template id="report_Saleorder_inherit" inherit_id="sale.report_saleorder_document">
+        
+        <data>
+<xpath expr="/t/t/div/table/thead/tr/th[1]" position="before">
+    <th>
+      <span>#</span>
+    </th>
+    <th>
+      <span>Height</span>
+    </th>
+    <th>
+      <span>Width</span>
+    </th>
+    <th>
+      <span>Pieces</span>
+    </th>
+  </xpath>
+  <xpath expr="/t/t/div/table/tbody/t[2]/tr/t[1]/td[1]" position="before">
+    <td>
+      <span t-raw="line_index + 1"/>
+    </td>
+    <td>
+      <t t-if="line.Custom is True"><span t-field="line.altura"/></t>
+      <t t-if="line.Custom is True">"</t>
+    </td>
+    <td>
+      <t t-if="line.Custom is True"><span t-field="line.ancho"/></t>
+      <t t-if="line.Custom is True">"</t>
+    </td>
+    <td>
+      <span t-field="line.piezas"/>
+    </td>
+  </xpath>
+
+
+	</data>
+  </template>
+	
+</odoo>

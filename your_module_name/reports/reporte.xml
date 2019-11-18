@@ -1,0 +1,35 @@
+
+<odoo>
+    <template id="report_purchaseorder_inherit" inherit_id="purchase.report_purchaseorder_document">
+        <data>
+  <xpath expr="/t/t/div/table/thead/tr/th[1]" position="before">
+	<th><strong>#</strong></th>
+	<th><strong>Height</strong></th>
+	<th><strong>Width</strong></th>
+	<th><strong>Pieces</strong></th>
+  </xpath>
+  <xpath expr="/t/t/div/table/tbody/tr/td[1]" position="before">
+  
+	<td>
+      <span t-raw="line_index + 1"/>
+    </td>
+
+	<td>
+        <t t-if="line.Custom is True"><span t-field="line.altura"/></t>
+        <t t-if="line.Custom is True">"</t>
+    </td>
+	<td>
+        <t t-if="line.Custom is True"><span t-field="line.ancho"/></t>
+        <t t-if="line.Custom is True">"</t>
+    </td>
+	<td>
+        <p t-field="line.piezas"/>
+        
+    </td>
+ </xpath>
+
+ 
+</data>
+    </template>
+	
+</odoo>

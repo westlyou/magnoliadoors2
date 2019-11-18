@@ -1,0 +1,94 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* your_module_name
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-07 15:49+0000\n"
+"PO-Revision-Date: 2019-01-07 15:49+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: your_module_name
+#: model_terms:ir.ui.view,arch_db:your_module_name.report_Saleorder_inherit
+msgid "<span>Height</span>"
+msgstr "<span>Altura</span>"
+
+#. module: your_module_name
+#: model_terms:ir.ui.view,arch_db:your_module_name.report_Saleorder_inherit
+msgid "<span>Pieces</span>"
+msgstr "<span>Piezas</span>"
+
+#. module: your_module_name
+#: model_terms:ir.ui.view,arch_db:your_module_name.report_Saleorder_inherit
+msgid "<span>Width</span>"
+msgstr "<span>Ancho</span>"
+
+#. module: your_module_name
+#: model_terms:ir.ui.view,arch_db:your_module_name.report_purchaseorder_inherit
+msgid "<strong>Height</strong>"
+msgstr "<strong>Altura</strong>"
+
+#. module: your_module_name
+#: model_terms:ir.ui.view,arch_db:your_module_name.report_purchaseorder_inherit
+msgid "<strong>Pieces</strong>"
+msgstr "<strong>Piezas</strong>"
+
+#. module: your_module_name
+#: model_terms:ir.ui.view,arch_db:your_module_name.report_purchaseorder_inherit
+msgid "<strong>Width</strong>"
+msgstr "<strong>Ancho</strong>"
+
+#. module: your_module_name
+#: model:ir.model.fields,field_description:your_module_name.field_purchase_order_line__product_qty
+#: model:ir.model.fields,field_description:your_module_name.field_sale_order_line__product_uom_qty
+msgid "Cantidad"
+msgstr ""
+
+#. module: your_module_name
+#: model:ir.model.fields,field_description:your_module_name.field_purchase_order_line__Custom
+#: model:ir.model.fields,field_description:your_module_name.field_sale_order_line__Custom
+msgid "Custom"
+msgstr ""
+
+#. module: your_module_name
+#: model:ir.model.fields,field_description:your_module_name.field_purchase_order_line__altura
+#: model:ir.model.fields,field_description:your_module_name.field_sale_order_line__altura
+msgid "Height"
+msgstr "Altura"
+
+#. module: your_module_name
+#: model:ir.model.fields,field_description:your_module_name.field_purchase_order_line__hide
+#: model:ir.model.fields,field_description:your_module_name.field_sale_order_line__hide
+msgid "Hide"
+msgstr ""
+
+#. module: your_module_name
+#: model:ir.model.fields,field_description:your_module_name.field_purchase_order_line__piezas
+#: model:ir.model.fields,field_description:your_module_name.field_sale_order_line__piezas
+msgid "Pieces"
+msgstr "Piezas"
+
+#. module: your_module_name
+#: model:ir.model,name:your_module_name.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: your_module_name
+#: model:ir.model,name:your_module_name.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: your_module_name
+#: model:ir.model.fields,field_description:your_module_name.field_purchase_order_line__ancho
+#: model:ir.model.fields,field_description:your_module_name.field_sale_order_line__ancho
+msgid "Width"
+msgstr "Ancho"
+
+
