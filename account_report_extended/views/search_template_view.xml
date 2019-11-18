@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="search_template_salesperson">
+            <a t-if="options.get('users')" type="button" class="dropdown-toggle account_salesperson_filter"
+               data-toggle="dropdown">
+                <span class="fa fa-folder-open"/>
+                SalesPerson
+            </a>
+            <div class="dropdown-menu o_filters_menu" role="menu">
+                <div t-if="options.get('users') != None" class="o_account_report_search" role="menuitem">
+                    <b>SalesPerson</b>
+                    <br/>
+                    <select class="js_account_salesperson_auto_complete o_account_report_select" data-filter="salesperson"
+                            multiple="multiple">
+                        <t t-foreach="salesperson" t-as="a">
+                            <option t-att-value="a[0]">
+                                <t t-esc="a[1]"/>
+                            </option>
+                        </t>
+                    </select>
+                </div>
+                <div class="dropdown-divider" role="separator"></div>
+            </div>
+        </template>
+
+        <template id="search_template_inherited" inherit_id="account_reports.search_template">
+            <xpath expr="//div[@class='btn-group o_dropdown o_account_reports_filter_partner']" position="after">
+                <div class="btn-group o_dropdown o_account_reports_filter_salesperson" t-if="options.get('users')">
+                    <t t-call="account_report_extended.search_template_salesperson"/>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
